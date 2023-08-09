@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERP System</title>
+    <!-- Hier können Sie zusätzliche CSS- oder JS-Dateien einbinden -->
+</head>
+<body>
+    <header>
+        <h1>Willkommen beim ERP System</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{% url 'kunde_list' %}">Kundenliste</a></li>
+           
+        </ul>
+    </nav>
+    <main>
+        {% block content %}
+        <!-- Der spezifische Inhalt der einzelnen Seiten wird hier eingefügt -->
+        {% endblock %}
+    </main>
+    <footer>
+        <p>ERP System &copy; 2023</p>
+    </footer>
+</body>
+</html>
